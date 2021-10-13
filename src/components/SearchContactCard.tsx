@@ -64,26 +64,25 @@ const SearchContactCard: React.FC<SearchContactCardProps> = ({
   trust
 }) => {
   return (
-    <div style={{width:'400px'}}>
-        <ProfileContainer>
-          <UserAvatar 
-            fullName={fullName}
-            profileImageUrl={profileImageUrl}
-            trust={trust}
-          />
-          <UserNameContainer>
-            <Typography style={{fontSize:'1.5em'}}>{fullName}</Typography>
-            <Typography style={{color:'grey'}}>nessuna connessione</Typography>
-          </UserNameContainer>
-          <AddIconButton startIcon={<AddIcon />} />
-        </ProfileContainer> 
-        <InfoContainer>
-          <label>Sta gia condividendo</label>
-          <a href="#" style={{margin:'0 4px'}}>Disney Plus</a>
-        </InfoContainer>   
-            
-      </div>
-    )
-  }
+    <div style={{width:'400px', margin: '2em 0'}}>
+      <ProfileContainer>
+        <UserAvatar 
+          fullName={fullName}
+          profileImageUrl={profileImageUrl}
+          trust={trust}
+        />
+        <UserNameContainer>
+          <Typography style={{fontSize:'1.5em'}}>{fullName}</Typography>
+          <Typography style={{color:'grey'}}>nessuna connessione</Typography>
+        </UserNameContainer>
+        <AddIconButton startIcon={<AddIcon />} />
+      </ProfileContainer> 
+      <InfoContainer>
+        <label>Sta gia condividendo</label>
+        <a href="/" style={{margin:'0 4px'}}>Disney Plus</a>
+      </InfoContainer>   
+    </div>
+  )
+}
   
-  export default SearchContactCard;
+export default SearchContactCard;
